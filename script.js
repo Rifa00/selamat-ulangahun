@@ -363,27 +363,13 @@ async function fetchData() {
   const response = await fetch(API_URL);
   const data = await response.json();
   if (
-    JSON.stringify(localStorage.getItem("items")).length <=
-    JSON.stringify(data).length
+    JSON.stringify(localStorage.getItem("items"))!==
+    JSON.stringify(data)
   ) {
     localStorage.setItem("items", JSON.stringify(data));
     return console.log("terjadi perbaikan di storage");
-  } else {
-    const uniqueIds = items.filter(
-      (item) => !data.some((dt) => JSON.stringify(item) === JSON.stringify(dt))
-    );
-    const action = "create";
-    uniqueIds.forEach((e) => {
-      const [id, photoUrl, title, description] = e;
-      fetch(API_URL, {
-        method: "POST",
-        body: JSON.stringify({ action, id, photoUrl, title, description }),
-      });
-      return console.log("terjadi perbaikan ke server");
-    });
-  }
+  } 
 }
-fetchData();
 
 function reloadData() {
   const dataGallery = que(".data-gallery");
