@@ -377,8 +377,8 @@ async function fetchData() {
 function reloadData() {
   const dataGallery = que(".data-gallery");
   dataGallery.innerHTML = "";
-  items.reverse();
-  items.forEach((row) => {
+  
+  items.slice().reverse().forEach((row) => {
     const style = row[0] % 2 === 0 ? "true" : "false";
     const div = document.createElement("div");
     div.innerHTML = `
@@ -458,7 +458,7 @@ function addItem(id, photoUrl, title, description) {
   } else {
     const newID = items.length + 1;
     const newItem = [newID, photoUrl, title, description];
-    items.reverse().push(newItem);
+    items.push(newItem);
     localStorage.setItem("items", JSON.stringify(items));
   }
   reloadData();
