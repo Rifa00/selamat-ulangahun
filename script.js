@@ -123,7 +123,7 @@ document.getElementById("btn-input").addEventListener("click", () => {
     document.querySelector(".alert1").classList.add("show");
     imgF.setAttribute("src", "img/tidak.gif");
     setTimeout(() => {
-      imgF.setAttribute("src", "img/iya.gif");
+      imgF.setAttribute("src", "img/input.gif");
       document.querySelector(".alert1").classList.remove("show");
     }, 1500);
     return;
@@ -132,7 +132,7 @@ document.getElementById("btn-input").addEventListener("click", () => {
     document.querySelector(".alert2").classList.add("show");
     imgF.setAttribute("src", "img/tidak.gif");
     setTimeout(() => {
-      imgF.setAttribute("src", "img/iya.gif");
+      imgF.setAttribute("src", "img/input.gif");
       document.querySelector(".alert2").classList.remove("show");
     }, 1500);
     return;
@@ -141,7 +141,7 @@ document.getElementById("btn-input").addEventListener("click", () => {
     document.querySelector(".alert4").classList.add("show");
     imgF.setAttribute("src", "img/tidak.gif");
     setTimeout(() => {
-      imgF.setAttribute("src", "img/iya.gif");
+      imgF.setAttribute("src", "img/input.gif");
       document.querySelector(".alert4").classList.remove("show");
     }, 1500);
     return;
