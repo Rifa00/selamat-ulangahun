@@ -75,10 +75,6 @@ doc("btn-ya").addEventListener("click", () => {
   pick("#pick-1");
   sessionStorage.removeItem("anim-masuk");
   animpage();
-  if (dia) {
-    fetchData();
-    location.reload();
-    } 
   modalMaaf.classList.remove("show");
 });
 
