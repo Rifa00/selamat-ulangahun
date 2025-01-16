@@ -75,6 +75,10 @@ doc("btn-ya").addEventListener("click", () => {
   pick("#pick-1");
   sessionStorage.removeItem("anim-masuk");
   animpage();
+  if (dia) {
+    fetchData();
+    location.reload();
+    } 
   modalMaaf.classList.remove("show");
 });
 
@@ -199,9 +203,11 @@ btnNoI.addEventListener("mouseout", () => {
 });
 que(".card").classList.remove("hidden");
 const dia = nm.find((n) => n === nameS.replace(/\s+/g, ""));
+
 if (dia) {
       fetchData();
     } 
+
 animpage();
 function animpage() {
   if (sessionStorage.getItem("anim-masuk")) {
