@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="img/satu.gif" />
+    <title>selamat-ulangtahun</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <audio id="pick-1" src="sound/1.mp3" preload="auto"></audio>
+    <audio id="pick-2" src="sound/2.mp3" preload="auto"></audio>
+    <audio id="pick-3" src="sound/3.mp3" preload="auto"></audio>
+    <section id="home">
+      <!-- Home -->
+      <div id="load" class="modal">
+        <div class="card-load">
+          <div class="spinner"></div>
+          <h4>Tunggu...</h4>
+        </div>
+      </div>
+      <div id="confirm" class="modal">
+        <div class="card-modal">
+          <div class="input-name">
+            <img id="imgF" src="img/input.gif" alt="" height="150px" />
+            <h1>Masukan nama kamu</h1>
+            <input
+              id="name-i"
+              type="text"
+              placeholder="Masukan nama.."
+              autofocus
+            />
+            <span class="reset" id="reset1">x</span>
+            <div class="tmpt-alert">
+              <p class="alert1 alert">Tidak boleh kosong! 😡</p>
+              <p class="alert2 alert">Terlalu sedikit! 😡</p>
+              <p class="alert3 alert">Kalau gak di isi saya marah 🤬</p>
+              <p class="alert4 alert">Terlalu banyak 🤬</p>
+            </div>
+            <div class="btn">
+              <button id="btn-input">✔️Ya</button>
+              <div class="btn-no-input">
+                <button id="btn-noInput" class="b">✖️Tidak</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://rifa00.github.io/personal-web/">#develover</a>
+      </div>
+      <!-- akhir confir nama  -->
+      <div class="background">
+        <!-- confirm nama -->
+        <div id="modal-mau" class="modal">
+          <div class="card-modal">
+            <img src="img/wlee.gif" alt="" height="150px" />
+            <h1>Tapi boong!😂</h1>
+            <h3 class="bottom">Gak jadi ah kamunya bau 😝......</h3>
+            <meter
+              id="meter1"
+              min="0"
+              max="100"
+              optimum="100"
+              optimum="0"
+            ></meter>
+          </div>
+        </div>
+        <div id="modal-maaf" class="modal">
+          <div class="card-modal">
+            <img src="img/ktw.gif" alt="" height="150px" />
+            <h2 id="becanda">Becanda wkwkwk ><🤣😝</h2>
+            <h4 id="maaf">Jangan marah ya aku belum bisa kasih hadiah!!!</h4>
+            <h3 id="uang" class="hidden">
+              Uang nya cuma ada goceng
+              <img src="img/goceng.jpeg" width="50px" alt="" /> 😁😆
+            </h3>
+            <div class="button">
+              <button id="btn-ya" class="hidden">Ya 😊</button>
+            </div>
+            <meter
+              id="meter2"
+              min="0"
+              max="100"
+              optimum="100"
+              optimum="0"
+            ></meter>
+          </div>
+        </div>
+        <div id="modal-balas" class="modal">
+          <div class="card-modal">
+            <div class="input-name">
+              <img src="img/balas.gif" alt="" height="150px" />
+              <h1>Happy Level Up Day!!</h1>
+              <h4>Tuliskan sesuatu buat aku</h4>
+              <input
+                id="pesan"
+                type="text"
+                placeholder="Tulis pesan disini.."
+                autofocus
+                required
+              />
+              <span class="reset" id="reset2">x</span>
+              <div class="button">
+                <button id="btn-kirim">💌Kirim</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page">
+          <div class="gif">
+            <img
+              id="gif-j"
+              class="anim-gif"
+              src="img/satu.gif"
+              alt=""
+              height="250px"
+            />
+          </div>
+          <h1 class="anim-kebawah">Hallo <span id="name"></span>💖✨</h1>
+          <div class="card hidden">
+            <h1 id="selamat-ulangtahun" class="anim-kebawah hidden">
+              Selamat Ulang tahun <span id="name"></span>😝😘^_-
+            </h1>
+            <p id="write-1"></p>
+            <p id="write-2"></p>
+            <p id="tunggu" class="hidden">Tunggu...</p>
+            <div id="tawaran-kado" class="anim hidden">
+              <div class="gif">
+                <img id="gif-enggak" src="img/kado.gif" alt="" height="50px" />
+              </div>
+              <div id="belum-mau" class="anim">
+                <h3><span id="name"></span> Mau Kado Gak Nih ?😊💘</h3>
+                <h4>Ayo jawab ?</h4>
+              </div>
+              <div id="enggak" class="hidden">
+                <h3>Ya Udah kalo gak mau mah!!😜💞</h3>
+                <h4>Ma Gak Nih ?🤣</h4>
+              </div>
+              <div class="btn">
+                <button id="btn-enggak">Nggak😝</button>
+                <button id="btn-mau">Mau💘</button>
+              </div>
+            </div>
+
+            <h3 id="tetap-1"></h3>
+            <h1 id="tetap-2" class="anim hidden">
+              Happy Birthday,<span id="name"></span>😊😂
+            </h1>
+            <p id="tetap-3"></p>
+            <div class="button">
+              <a href="" id="lanjut" class="anim hidden">Lanjut❤️</a>
+
+              <a
+                id="tetap-4"
+                onclick="fetchData()"
+                href="#gallery"
+                class="hidden"
+                >Lihat kenangan!!😊</a
+              >
+              <button
+                id="btn-balas"
+                class="anim hidden"
+                onclick="pick('#pick-1')"
+              >
+                Balas💌
+              </button>
+            </div>
+          </div>
+          <p class="tag">#<span id="name"></span></p>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section id="gallery" class="container hidden">
+      <h1>Our Gallery</h1>
+      <div class="alert-i hidden">
+        <img src="img/tidak.gif" alt="" height="100vh" />
+        <h4><span id="name"></span> harus masukan satu foto!!</h4>
+      </div>
+      <div class="data-gallery"></div>
+      <div class="open-form">
+        <span id="open-form">Input Foto</span>
+        <span id="close-form" class="hidden">x</span>
+      </div>
+      <div id="display-form-photo" class="photo-i hidden">
+        <form id="photo-form">
+          <input type="hidden" id="id" />
+          <input type="file" id="photo" accept="image/*" />
+          <input type="text" id="title" placeholder="Judul" required />
+          <textarea
+            id="description"
+            placeholder="Deskripsi"
+            required
+          ></textarea>
+          <input class="reset-form hidden" type="reset" value="Reset" />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer id="footer" class="hidden">
+      <div class="fitur">
+        <span id="clear">Reset website</span>
+        <div>
+          <a href="" id="link">
+            <input type="text" id="linkToCopy" value="" readonly
+          /></a>
+          <span id="salin"><i class="fa-solid fa-link"></i></span>
+        </div>
+
+        <a href="https://rifa00.github.io/personal-web/">#develover</a>
+        <span>&copy; 2025💖 Ripadevelov. Semua  <a href="https://www.dgip.go.id/" target="_blank">Hak Cipta</a> dilindungi.</span>
+      </div>
+      <div class="sosmed">
+          
+        <a href="mailto:rifamustopa00@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="tel:+6283845820706"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://www.instagram.com/rifqq7/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://github.com/rifa00" target="_blank" aria-label="GitHub">
+  <i class="fab fa-github"></i>
+</a>
+
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
