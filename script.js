@@ -200,10 +200,6 @@ btnNoI.addEventListener("mouseout", () => {
 que(".card").classList.remove("hidden");
 const dia = nm.find((n) => n === nameS.replace(/\s+/g, ""));
 
-if (dia) {
-      fetchData();
-    } 
-
 animpage();
 function animpage() {
   if (sessionStorage.getItem("anim-masuk")) {
@@ -239,6 +235,7 @@ function animpage() {
       que(".container").classList.remove("hidden");
       docR("footer");
       fetchData();
+      location.reload();
     } else if (nameS) {
       docR("footer");
     }
@@ -324,10 +321,9 @@ window.addEventListener("scroll", () => {
     nameS.replace(/\s+/g, "") === dia &&
     pageY > 600
   ) {
-    fetchData();
     sessionStorage.setItem("no", "refresh");
     que("#open-form").click();
-    reloadData();
+    fetchData();
   }
 });
 que("#description").addEventListener("input", reset);
@@ -380,7 +376,6 @@ async function fetchData() {
       const response = saveData("items", JSON.stringify(data));
       console.log(response);
       reloadData();
-      location.reload();
     } catch (e) {
       alert(e.message);
     }
