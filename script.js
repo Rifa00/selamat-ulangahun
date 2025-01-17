@@ -199,7 +199,6 @@ btnNoI.addEventListener("mouseout", () => {
 });
 que(".card").classList.remove("hidden");
 const dia = nm.find((n) => n === nameS.replace(/\s+/g, ""));
-
 animpage();
 function animpage() {
   if (sessionStorage.getItem("anim-masuk")) {
@@ -235,7 +234,6 @@ function animpage() {
       que(".container").classList.remove("hidden");
       docR("footer");
       fetchData();
-      location.reload();
     } else if (nameS) {
       docR("footer");
     }
