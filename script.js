@@ -324,6 +324,7 @@ window.addEventListener("scroll", () => {
     nameS.replace(/\s+/g, "") === dia &&
     pageY > 600
   ) {
+    fetchData();
     sessionStorage.setItem("no", "refresh");
     que("#open-form").click();
     reloadData();
