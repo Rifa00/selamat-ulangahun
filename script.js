@@ -321,7 +321,6 @@ window.addEventListener("scroll", () => {
   ) {
     sessionStorage.setItem("no", "refresh");
     que("#open-form").click();
-    fetchData();
   }
 });
 que("#description").addEventListener("input", reset);
