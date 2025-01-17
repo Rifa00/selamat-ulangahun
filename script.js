@@ -380,6 +380,7 @@ async function fetchData() {
       const response = saveData("items", JSON.stringify(data));
       console.log(response);
       reloadData();
+      location.reload();
     } catch (e) {
       alert(e.message);
     }
@@ -463,7 +464,6 @@ document.getElementById("photo-form").addEventListener("submit", async (e) => {
   });
   console.log(await response.text());
   load.classList.remove("show");
-  reloadData();
   fetchData();
 });
 
